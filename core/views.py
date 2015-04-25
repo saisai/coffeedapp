@@ -6,3 +6,7 @@ from django.views.generic import TemplateView
 # Create your views here.
 def TestView(request, **kwargs):
     return HttpResponse("Hello world");
+
+class SplashView(TemplateView):
+    template_name = 'index.html'
+
