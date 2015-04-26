@@ -10,3 +10,6 @@ def TestView(request, **kwargs):
 class SplashView(TemplateView):
     template_name = 'index.html'
 
+class LandingView(TemplateView):
+    template_name = "base/index.html"
+

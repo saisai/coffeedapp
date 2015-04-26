@@ -9,5 +9,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     #url(r'^$', coreviews.TestView),
-    url(r'^$', coreviews.SplashView.as_view()),
+    #url(r'^$', coreviews.SplashView.as_view()),
+    url(r'', include('core.urls')),
 ]
